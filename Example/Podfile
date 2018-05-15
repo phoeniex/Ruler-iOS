@@ -1,0 +1,14 @@
+platform :ios, '9.0'
+use_frameworks!
+
+target 'SwiftRuler_Example' do
+  pod 'SwiftRuler', :path => '../'
+  pod 'SwiftLint'
+end
+
+target 'SwiftRuler_Tests' do
+  pod 'SwiftRuler', :path => '../'
+  pod 'SwiftLint'
+  pod 'Quick'
+  pod 'Nimble'
+end

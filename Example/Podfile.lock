@@ -1,0 +1,28 @@
+PODS:
+  - Nimble (7.1.1)
+  - Quick (1.3.0)
+  - Reachability (3.2)
+  - SwiftLint (0.24.0)
+  - SwiftRuler (1.0.0):
+    - Reachability
+
+DEPENDENCIES:
+  - Nimble
+  - Quick
+  - SwiftLint
+  - SwiftRuler (from `../`)
+
+EXTERNAL SOURCES:
+  SwiftRuler:
+    :path: ../
+
+SPEC CHECKSUMS:
+  Nimble: 391f07782af4b37914f9bd7b2ffbb952731b8202
+  Quick: 03278013f71aa05fe9ecabc94fbcc6835f1ee76f
+  Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
+  SwiftLint: a014c92b4664e8b13f380f8640a51bb1733778ba
+  SwiftRuler: f95999f8f28804decb0d9ef5668f2b44865aa2dd
+
+PODFILE CHECKSUM: a1e7f6a67f5522b5016be731439418cb8fa8b3e7
+
+COCOAPODS: 1.4.0
