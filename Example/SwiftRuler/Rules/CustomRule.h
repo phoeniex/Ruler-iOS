@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@import Ruler;
+@import SwiftRuler;
 
 @interface CustomRule : NSObject <Rule>
 

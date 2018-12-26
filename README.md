@@ -247,7 +247,7 @@ class IsARule: Rule {
 * UISwitch: Capture *isOn* parameter
 * UIButton: Capture *isSelected* parameter
 * UILabel: Capture *text* parameter
-* Primitive Object: String, Int, Double, Bool. 
+* Primitive Object: String, Int, Double, Float, Bool. 
 
 ### Compare Rulable
 
@@ -295,7 +295,9 @@ class CustomView: UIView, Rulable {
 * Version 1.0.0:
     * Initialize Version
 * Version 1.1.0:
-    * Add standard object (String, Int, Double, Bool) as Rulable Object.
+    * Add standard object (String, Int, Double, Float and Bool) as Rulable Object.
+* Version 1.1.1:
+    * Fix Primitive type and not apply in Rulable.
 
 ## Author
 

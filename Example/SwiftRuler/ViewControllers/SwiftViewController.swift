@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Ruler
 
 class SwiftViewController: UIViewController {
 

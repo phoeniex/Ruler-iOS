@@ -44,33 +44,3 @@ extension UILabel {
     return text
   }
 }
-
-extension String {
-  public var candidateValue: Any? {
-    return self
-  }
-}
-
-extension Int {
-  public var candidateValue: Any? {
-    return self
-  }
-}
-
-extension Double {
-  public var candidateValue: Any? {
-    return self
-  }
-}
-
-extension Float {
-  public var candidateValue: Any? {
-    return self
-  }
-}
-
-extension Bool {
-  public var candidateValue: Any? {
-    return self
-  }
-}

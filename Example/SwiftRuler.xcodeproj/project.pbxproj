@@ -30,7 +30,6 @@
 		E28D814120AA9FDD00FB916E /* SwiftRuler.podspec in Resources */ = {isa = PBXBuildFile; fileRef = E28D814020AA9FDC00FB916E /* SwiftRuler.podspec */; };
 		E2E28DCF1FE7B0F50068DEDA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E28DCD1FE7B0F50068DEDA /* AppDelegate.m */; };
 		E2E28DD11FE7B1020068DEDA /* SwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E28DD01FE7B1020068DEDA /* SwiftViewController.swift */; };
-		ED35AEB9CF125104D6CA5BDB /* Pods_Ruler_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2359E0988960E95435AC977B /* Pods_Ruler_Example.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,7 +110,6 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				ED35AEB9CF125104D6CA5BDB /* Pods_Ruler_Example.framework in Frameworks */,
 				A24979632BFE9E4FAD1EBFB1 /* Pods_SwiftRuler_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,7 +295,6 @@
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
 				7B2CE2EA230C30425C924FE8 /* [CP] Embed Pods Frameworks */,
-				818D565B5D15C2A37C5A775D /* [CP] Copy Pods Resources */,
 				E2CC9B3A1FF3A3B1000AD008 /* Swift Lint */,
 			);
 			buildRules = (
@@ -318,7 +315,6 @@
 				6003F5AB195388D20070C39A /* Frameworks */,
 				6003F5AC195388D20070C39A /* Resources */,
 				63CBE189C152FFA2BCB57839 /* [CP] Embed Pods Frameworks */,
-				D1E2CD6DFE46394BEA00D189 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -456,21 +452,6 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftRuler_Example/Pods-SwiftRuler_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		818D565B5D15C2A37C5A775D /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftRuler_Example/Pods-SwiftRuler_Example-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		AF140688EE85A3C24F5C89AF /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -487,21 +468,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D1E2CD6DFE46394BEA00D189 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftRuler_Tests/Pods-SwiftRuler_Tests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E2CC9B3A1FF3A3B1000AD008 /* Swift Lint */ = {
@@ -678,8 +644,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5NXRHP6KFM;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Ruler/SupportingFiles/SwiftRuler-Prefix.pch";
-				INFOPLIST_FILE = "Ruler/SupportingFiles/SwiftRuler-Info.plist";
+				GCC_PREFIX_HEADER = "SwiftRuler/SupportingFiles/SwiftRuler-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/SwiftRuler/SupportingFiles/SwiftRuler-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -687,7 +653,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "23969623-535b-43e2-a67a-d2c7cf48832f";
 				PROVISIONING_PROFILE_SPECIFIER = "Cocoapods Demo - Development";
-				SWIFT_OBJC_BRIDGING_HEADER = "Ruler/SupportingFiles/SwiftRuler_Example-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftRuler/SupportingFiles/SwiftRuler_Example-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				WRAPPER_EXTENSION = app;
@@ -702,8 +668,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5NXRHP6KFM;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Ruler/SupportingFiles/SwiftRuler-Prefix.pch";
-				INFOPLIST_FILE = "Ruler/SupportingFiles/SwiftRuler-Info.plist";
+				GCC_PREFIX_HEADER = "SwiftRuler/SupportingFiles/SwiftRuler-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/SwiftRuler/SupportingFiles/SwiftRuler-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -711,7 +677,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "23969623-535b-43e2-a67a-d2c7cf48832f";
 				PROVISIONING_PROFILE_SPECIFIER = "Cocoapods Demo - Development";
-				SWIFT_OBJC_BRIDGING_HEADER = "Ruler/SupportingFiles/SwiftRuler_Example-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftRuler/SupportingFiles/SwiftRuler_Example-Bridging-Header.h";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				WRAPPER_EXTENSION = app;
 			};

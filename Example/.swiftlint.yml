@@ -1,0 +1,20 @@
+disabled_rules:
+  - trailing_newline
+  - trailing_whitespace
+  - vertical_whitespace
+  - nesting
+identifier_name:
+  min_length:
+    error: 3
+  excluded:
+    - id
+line_length:
+  ignores_comments: true
+  warning: 150
+  error: 200
+excluded:
+  - Pods
+included:
+  - ./
+  - ../src
+  - ../Example
