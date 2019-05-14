@@ -33,7 +33,7 @@ class SwiftViewController: UIViewController {
     }
 
     ruler.add(emptyTestTextField,
-              rules: [(EmptyStringRule(), "Text must not empty"),
+              rules: [(EmptyStringRule(ignoreCharacterSet: .whitespaces), "Text must not empty, ignoring space"),
                       (EmailRule(), "Email format incorrect")])
     ruler.add(customValidateTextField, rule: CustomRule(), userInfo: "Text must not contain CAPITAL letters.")
     ruler.add(trueValidateToggle, rule: TrueRule(), userInfo: "Toggle must be set to True.")

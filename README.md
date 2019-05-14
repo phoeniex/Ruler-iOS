@@ -182,10 +182,12 @@ EmailRule()
 
 ### EmptyStringRule
 
-Rule for checking candidate is empty or not. Use of mandatory field. Required candidate to check.
+Rule for checking candidate is empty or not. Use of mandatory field. Required candidate to check. ignoreCharacterSet is use for character set that want to ignore
+for validation.
 
 ```swift
 EmptyStringRule()
+EmptyStringRule(ignoreCharacterSet: .whiteSpace)
 ```
 
 ### RegexRule
@@ -298,6 +300,8 @@ class CustomView: UIView, Rulable {
     * Add standard object (String, Int, Double, Float and Bool) as Rulable Object.
 * Version 1.1.1:
     * Fix Primitive type and not apply in Rulable.
+* Version 1.2.0:
+    * Add IgnoreCharacterSet in EmptyStringRule initialize.
 
 ## Author
 
