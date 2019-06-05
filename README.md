@@ -302,6 +302,8 @@ class CustomView: UIView, Rulable {
     * Fix Primitive type and not apply in Rulable.
 * Version 1.2.0:
     * Add IgnoreCharacterSet in EmptyStringRule initialize.
+* Version 1.2.1:
+    * Fix Email Rule to validate whole word.
 
 ## Author
 

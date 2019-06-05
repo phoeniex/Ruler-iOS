@@ -19,7 +19,7 @@ class FormatValidatorViewController: UIViewController {
     super.viewDidLoad()
 
     do {
-      let regexRule = try RegexRule(pattern: "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}")
+      let regexRule = try RegexRule(pattern: "^[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}$")
       ruler.add(emailTextField, rule: regexRule, userInfo: "Incorrect email format.")
     } catch {}
 
