@@ -20,4 +20,5 @@ open class StringRule: NSObject, Rule {
   open func validate(string: String) -> Bool {
     return true
   }
+  
 }

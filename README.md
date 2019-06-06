@@ -244,12 +244,21 @@ class IsARule: Rule {
 
 **SwiftRuler** only can validate elements that conform to *Rulable* protocol. There are some UI Element that already assign as *Rulable*. in list below:
 
-* UITextField: Capture *text* parameter
-* UITextView: Capture *text* parameter
-* UISwitch: Capture *isOn* parameter
-* UIButton: Capture *isSelected* parameter
-* UILabel: Capture *text* parameter
+* UITextField: Capture *text* parameter.
+* UITextView: Capture *text* parameter.
+* UISwitch: Capture *isOn* parameter.
+* UIButton: Capture *isSelected* parameter.
+* UILabel: Capture *text* parameter.
 * Primitive Object: String, Int, Double, Float, Bool. 
+
+**TrimStringRuler** this rulable is support trimming string before proceed validation.
+
+```swift
+let ruler = Ruler()
+ruler.add(TrimStringRulable(rulable: usernameTextField, trimmingCharacters: .whitespacesAndNewlines), rule: EmptyStringRule())
+ruler.add(emailTextField.rulable(byTrimmingStringIn: .whitespacesAndNewlines), rule: EmailRule()) // or using Rulable extension
+ruler.validate()
+```
 
 ### Compare Rulable
 
@@ -304,6 +313,8 @@ class CustomView: UIView, Rulable {
     * Add IgnoreCharacterSet in EmptyStringRule initialize.
 * Version 1.2.1:
     * Fix Email Rule to validate whole word.
+* Version 1.3.0:
+    * Add TrimStringRulable to support trimming string before validation
 
 ## Author
 

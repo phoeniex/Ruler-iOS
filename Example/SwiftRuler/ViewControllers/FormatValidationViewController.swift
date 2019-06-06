@@ -20,11 +20,12 @@ class FormatValidatorViewController: UIViewController {
 
     do {
       let regexRule = try RegexRule(pattern: "^[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}$")
-      ruler.add(emailTextField, rule: regexRule, userInfo: "Incorrect email format.")
+      ruler.add(emailTextField.rulable(byTrimmingStringIn: .whitespacesAndNewlines), rule: regexRule, userInfo: "Incorrect email format.")
     } catch {}
 
     emailTextField.delegate = self
   }
+  
   @IBAction func submit(_ sender: Any) {
     var isSuccess = false
 
