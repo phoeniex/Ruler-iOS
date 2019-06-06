@@ -314,7 +314,9 @@ class CustomView: UIView, Rulable {
 * Version 1.2.1:
     * Fix Email Rule to validate whole word.
 * Version 1.3.0:
-    * Add TrimStringRulable to support trimming string before validation
+    * Add TrimStringRulable to support trimming string before validation.
+* Version 1.3.1:
+    * Fix compile error on StringRule.
 
 ## Author
 
