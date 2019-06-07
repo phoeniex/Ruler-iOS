@@ -8,13 +8,13 @@
 
 import Foundation
 
-open class RuleError: NSObject {
+open class RuleError<UserInfoType> {
   
   open var candidate: Any?
   open var rule: Rule!
-  open var userInfo: Any?
+  open var userInfo: UserInfoType?
   
-  public init(candidate: Any?, rule: Rule, userInfo: Any?) {
+  public init(candidate: Any?, rule: Rule, userInfo: UserInfoType?) {
     self.candidate = candidate
     self.rule = rule
     self.userInfo = userInfo

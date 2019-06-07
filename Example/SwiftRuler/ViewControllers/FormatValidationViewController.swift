@@ -7,13 +7,15 @@
 //
 
 import Foundation
+import UIKit
+import SwiftRuler
 
 class FormatValidatorViewController: UIViewController {
 
   @IBOutlet fileprivate weak var emailTextField: UITextField!
   @IBOutlet fileprivate weak var resultLabel: UITextField!
 
-  var ruler = Ruler()
+  var ruler = Ruler<String>()
 
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -30,7 +32,7 @@ class FormatValidatorViewController: UIViewController {
     var isSuccess = false
 
     if let error = ruler.validate() {
-      resultLabel.text = error.userInfo as? String
+      resultLabel.text = error.userInfo
     } else {
       resultLabel.text = "Success!"
       isSuccess = true

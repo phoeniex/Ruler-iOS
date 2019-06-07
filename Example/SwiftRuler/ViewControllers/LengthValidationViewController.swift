@@ -7,6 +7,8 @@
 //
 
 import Foundation
+import UIKit
+import SwiftRuler
 
 class LengthValidationViewController: UIViewController {
 
@@ -31,10 +33,10 @@ class LengthValidationViewController: UIViewController {
     var isSuccess = false
 
     if rule.validate(string: valueTextField.text!) {
-      resultLabel.text = info["error"]
-    } else {
       resultLabel.text = "Success!"
       isSuccess = true
+    } else {
+      resultLabel.text = info["error"]
     }
 
     guard let sender = sender as? UIButton else { return }
@@ -49,7 +51,7 @@ class LengthValidationViewController: UIViewController {
     max = Int.max
     inverted = false
 
-    switch number {
+    switch control.selectedSegmentIndex {
     case 0:
       min = number
       max = number

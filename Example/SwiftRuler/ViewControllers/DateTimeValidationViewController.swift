@@ -7,13 +7,15 @@
 //
 
 import Foundation
+import UIKit
+import SwiftRuler
 
 class DateTimeValidationViewController: UIViewController {
 
   @IBOutlet fileprivate weak var dateTimeTextField: UITextField!
   @IBOutlet fileprivate weak var resultLabel: UILabel!
 
-  var ruler = Ruler()
+  var ruler = Ruler<String>()
   var dateFormatter = DateFormatter()
 
   override func viewDidLoad() {

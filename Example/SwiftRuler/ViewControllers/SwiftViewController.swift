@@ -7,6 +7,27 @@
 //
 
 import UIKit
+import SwiftRuler
+
+enum FormError {
+  case emptyText
+  case incorrectEmail
+  case missingCapitalLetters
+  case missingToggle
+  case passwordMisMatch
+  case noInternet
+  
+  func toString() -> String {
+    switch self {
+    case .emptyText: return "Text must not empty, ignoring space"
+    case .incorrectEmail: return "Email format incorrect"
+    case .missingCapitalLetters: return "Text must not contain CAPITAL letters."
+    case .missingToggle: return "Toggle must be set to True."
+    case .passwordMisMatch: return "Password is not the same."
+    case .noInternet: return "No internet access."
+    }
+  }
+}
 
 class SwiftViewController: UIViewController {
 
@@ -19,7 +40,7 @@ class SwiftViewController: UIViewController {
   @IBOutlet fileprivate weak var validateResultLabel: UILabel!
   @IBOutlet fileprivate weak var trueValidateToggle: UISwitch!
 
-  private var ruler = Ruler()
+  private var ruler = Ruler<FormError>()
 
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -33,13 +54,13 @@ class SwiftViewController: UIViewController {
     }
 
     ruler.add(emptyTestTextField,
-              rules: [(EmptyStringRule(), "Text must not empty, ignoring space"),
-                      (EmailRule(), "Email format incorrect")])
-    ruler.add(customValidateTextField, rule: CustomRule(), userInfo: "Text must not contain CAPITAL letters.")
-    ruler.add(trueValidateToggle, rule: TrueRule(), userInfo: "Toggle must be set to True.")
+              rules: [(EmptyStringRule(), .emptyText),
+                      (EmailRule(), .incorrectEmail)])
+    ruler.add(customValidateTextField, rule: CustomRule(), userInfo: .missingCapitalLetters)
+    ruler.add(trueValidateToggle, rule: TrueRule(), userInfo: .missingToggle)
 
-    ruler.add(passwordValidateBlock, rule: TrueRule(), userInfo: "Password is not the same.")
-    ruler.add(rule: ConnectToInternetRule(), userInfo: "No internet access.")
+    ruler.add(passwordValidateBlock, rule: TrueRule(), userInfo: .passwordMisMatch)
+    ruler.add(rule: ConnectToInternetRule(), userInfo: .noInternet)
   }
 
   func show(error: String, for label: UILabel) {
@@ -52,7 +73,7 @@ class SwiftViewController: UIViewController {
     if !errors.isEmpty {
       var resultStr = "Complete with \(errors.count) error(s)."
       for error in errors {
-        guard let description = error.userInfo as? String else { return }
+        guard let description = error.userInfo?.toString() else { return }
         resultStr += "\n\(description)"
       }
       validateResultLabel.text = resultStr

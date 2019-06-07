@@ -7,6 +7,8 @@
 //
 
 import Foundation
+import UIKit
+import SwiftRuler
 
 class CompareValidateViewController: UIViewController {
 
@@ -14,7 +16,7 @@ class CompareValidateViewController: UIViewController {
   @IBOutlet fileprivate weak var confirmPasswordTextField: UITextField!
   @IBOutlet fileprivate weak var resultLabel: UILabel!
 
-  var ruler = Ruler()
+  var ruler = Ruler<String>()
   var dateFormatter = DateFormatter()
 
   override func viewDidLoad() {
