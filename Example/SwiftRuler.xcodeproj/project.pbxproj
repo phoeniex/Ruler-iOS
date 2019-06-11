@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		55A40366C088704CC12FC7E3 /* Pods_Ruler_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A135856A2B9BB45A0173994 /* Pods_Ruler_Tests.framework */; };
 		5D96D3586C27DC3940F4182B /* Pods_SwiftRuler_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F763FA0D5AC4B81D36DA518D /* Pods_SwiftRuler_Tests.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
@@ -20,7 +19,6 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		A24979632BFE9E4FAD1EBFB1 /* Pods_SwiftRuler_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D183001F937CD4F7797B75AD /* Pods_SwiftRuler_Example.framework */; };
-		E0547BE219919874FC065602 /* Pods_AllianzValidator_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBE6E1C86598455AD549538C /* Pods_AllianzValidator_Tests.framework */; };
 		E13401061DB0915400444C64 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E13401051DB0915400444C64 /* Launch Screen.storyboard */; };
 		E21F514A1EE024CC00B0FA77 /* LengthValidationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21F51491EE024CC00B0FA77 /* LengthValidationViewController.swift */; };
 		E21F514C1EE024DA00B0FA77 /* FormatValidationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21F514B1EE024DA00B0FA77 /* FormatValidationViewController.swift */; };
@@ -47,7 +45,6 @@
 		2247D67A5C073B1F2A6E825C /* Pods-AllianzValidator_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AllianzValidator_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AllianzValidator_Tests/Pods-AllianzValidator_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		2359E0988960E95435AC977B /* Pods_Ruler_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ruler_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2830683640363573D2DF573D /* Pods_AllianzValidator_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AllianzValidator_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2A135856A2B9BB45A0173994 /* Pods_Ruler_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ruler_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3717C3EA6B344D3FBE1C1C94 /* Pods-Ruler_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ruler_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Ruler_Tests/Pods-Ruler_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* SwiftRuler_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftRuler_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -84,7 +81,6 @@
 		D21CA5644386D7BB6E151FCC /* Pods-Ruler_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ruler_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Ruler_Example/Pods-Ruler_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		D70B08E74E98E12AAE5C1F1A /* Pods_Validator_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Validator_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D84BE09080F0CE332043E6DA /* Pods-AllianzValidator_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AllianzValidator_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-AllianzValidator_Example/Pods-AllianzValidator_Example.release.xcconfig"; sourceTree = "<group>"; };
-		DBE6E1C86598455AD549538C /* Pods_AllianzValidator_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AllianzValidator_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E13401051DB0915400444C64 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		E21F51491EE024CC00B0FA77 /* LengthValidationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LengthValidationViewController.swift; sourceTree = "<group>"; };
 		E21F514B1EE024DA00B0FA77 /* FormatValidationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormatValidationViewController.swift; sourceTree = "<group>"; };
@@ -120,8 +116,6 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				E0547BE219919874FC065602 /* Pods_AllianzValidator_Tests.framework in Frameworks */,
-				55A40366C088704CC12FC7E3 /* Pods_Ruler_Tests.framework in Frameworks */,
 				5D96D3586C27DC3940F4182B /* Pods_SwiftRuler_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -171,9 +165,7 @@
 				6B8DF18D6B6B9CEEE72EADA0 /* Pods_Validator_Example.framework */,
 				D70B08E74E98E12AAE5C1F1A /* Pods_Validator_Tests.framework */,
 				2830683640363573D2DF573D /* Pods_AllianzValidator_Example.framework */,
-				DBE6E1C86598455AD549538C /* Pods_AllianzValidator_Tests.framework */,
 				2359E0988960E95435AC977B /* Pods_Ruler_Example.framework */,
-				2A135856A2B9BB45A0173994 /* Pods_Ruler_Tests.framework */,
 				D183001F937CD4F7797B75AD /* Pods_SwiftRuler_Example.framework */,
 				F763FA0D5AC4B81D36DA518D /* Pods_SwiftRuler_Tests.framework */,
 			);
