@@ -8,7 +8,7 @@
 
 import Foundation
 
-open class DateTimeRule: NSObject, Rule {
+open class DateTimeRule: Rule {
   private var minimumDate: Date
   private var maximumDate: Date
   private var dateFormatter: DateFormatter!

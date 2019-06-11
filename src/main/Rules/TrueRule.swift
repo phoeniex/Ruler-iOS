@@ -8,7 +8,9 @@
 
 import Foundation
 
-open class TrueRule: NSObject, Rule {
+open class TrueRule: Rule {
+  
+  public init() {}
   
   open func validate(candidate: Any?) -> Bool {
     if let candidate = candidate as? NSNumber {

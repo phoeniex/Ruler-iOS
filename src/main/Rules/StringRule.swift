@@ -8,7 +8,9 @@
 
 import Foundation
 
-open class StringRule: NSObject, Rule {
+open class StringRule: Rule {
+  
+  public init() {}
   
   open func validate(candidate: Any?) -> Bool {
     guard let string = candidate as? String else {

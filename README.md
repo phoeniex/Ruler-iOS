@@ -317,6 +317,11 @@ class CustomView: UIView, Rulable {
     * Add TrimStringRulable to support trimming string before validation.
 * Version 1.3.1:
     * Fix compile error on StringRule.
+* Version 2.0.0:
+    * Remove Support For Object C
+    * Add Generic Type On User Info
+* Version 2.0.1:
+    * Remove NSObject From Rule
 
 ## Author
 

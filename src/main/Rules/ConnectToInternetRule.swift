@@ -9,7 +9,9 @@
 import Foundation
 import Reachability
 
-open class ConnectToInternetRule: NSObject, Rule {
+open class ConnectToInternetRule: Rule {
+  
+  public init() {}
   
   open func validate(candidate: Any? = nil) -> Bool {
     let reachability = Reachability.forInternetConnection()
