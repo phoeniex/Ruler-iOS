@@ -322,6 +322,9 @@ class CustomView: UIView, Rulable {
     * Add Generic Type On User Info
 * Version 2.0.1:
     * Remove NSObject From Rule
+* Version 2.0.2:
+    * Remove Case Insensitive Option From Regex Rule
+    * Upgrade To Swift 5
 
 ## Author
 

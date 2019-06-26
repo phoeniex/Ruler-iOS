@@ -18,7 +18,7 @@ open class RegexRule: StringRule {
   }
   
   public convenience init(pattern: String) throws {
-    let expression = try NSRegularExpression(pattern: pattern, options: [.caseInsensitive])
+    let expression = try NSRegularExpression(pattern: pattern)
     self.init(expression: expression)
   }
   

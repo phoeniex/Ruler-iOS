@@ -3,7 +3,7 @@ PODS:
   - Quick (1.3.0)
   - Reachability (3.2)
   - SwiftLint (0.24.0)
-  - SwiftRuler (2.0.1):
+  - SwiftRuler (2.0.2):
     - Reachability
 
 DEPENDENCIES:
@@ -28,7 +28,7 @@ SPEC CHECKSUMS:
   Quick: 03278013f71aa05fe9ecabc94fbcc6835f1ee76f
   Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
   SwiftLint: a014c92b4664e8b13f380f8640a51bb1733778ba
-  SwiftRuler: 8816e519e5dd597b8777ab80cae2537cd0fb08c2
+  SwiftRuler: 079d0c8c00879529a8b43e1a1b78565b42562a5e
 
 PODFILE CHECKSUM: a1e7f6a67f5522b5016be731439418cb8fa8b3e7
 
