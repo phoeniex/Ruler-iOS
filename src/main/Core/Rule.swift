@@ -8,6 +8,6 @@
 
 import Foundation
 
-public protocol Rule: class {
+public protocol Rule: AnyObject {
   func validate(candidate: Any?) -> Bool
 }
