@@ -60,7 +60,6 @@ class SwiftViewController: UIViewController {
     ruler.add(trueValidateToggle, rule: TrueRule(), userInfo: .missingToggle)
 
     ruler.add(passwordValidateBlock, rule: TrueRule(), userInfo: .passwordMisMatch)
-    ruler.add(rule: ConnectToInternetRule(), userInfo: .noInternet)
   }
 
   func show(error: String, for label: UILabel) {

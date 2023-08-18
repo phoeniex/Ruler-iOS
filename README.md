@@ -234,7 +234,7 @@ You can create custom rule by conform to *Rule* protocol or inherit *StringRule*
 
 ```swift
 class IsARule: Rule {
-  func validate(candidate: Any?) {
+  func validate(candidate: Any?) -> Bool {
     return candidate as? String == "A"
   }
 }
@@ -304,13 +304,13 @@ class CustomView: UIView, Rulable {
 ## Change log
 
 * Version 1.0.0:
-    * Initialize Version
+    * Initialize version
 * Version 1.1.0:
-    * Add standard object (String, Int, Double, Float and Bool) as Rulable Object.
+    * Add standard object (String, Int, Double, Float and Bool) as Rulable object.
 * Version 1.1.1:
-    * Fix Primitive type and not apply in Rulable.
+    * Fix primitive type and not apply in Rulable.
 * Version 1.2.0:
-    * Add IgnoreCharacterSet in EmptyStringRule initialize.
+    * Add IgnoreCharacterSet in EmptyStringRule.
 * Version 1.2.1:
     * Fix Email Rule to validate whole word.
 * Version 1.3.0:
@@ -318,13 +318,16 @@ class CustomView: UIView, Rulable {
 * Version 1.3.1:
     * Fix compile error on StringRule.
 * Version 2.0.0:
-    * Remove Support For Object C
-    * Add Generic Type On User Info
+    * Remove support For object C
+    * Add generic type on UserInfo
 * Version 2.0.1:
-    * Remove NSObject From Rule
+    * Remove NSObject from rule
 * Version 2.0.2:
-    * Remove Case Insensitive Option From Regex Rule
-    * Upgrade To Swift 5
+    * Remove case insensitive option from Regex rule
+    * Upgrade to swift 5
+* Version 2.1.0:
+    * Fix cannot conform Rulable protocol in UIView
+    * Remove 'ConnectToInternetRule' to reduce dependency
 
 ## Author
 

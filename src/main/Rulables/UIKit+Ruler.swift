@@ -9,7 +9,7 @@
 import Foundation
 
 extension UIView: Rulable {
-  @objc public var candidateValue: Any? {
+  @objc open var candidateValue: Any? {
     print("Validator: Cannot validate \(type(of:self)), it don't have candidateValue")
     return nil
   }

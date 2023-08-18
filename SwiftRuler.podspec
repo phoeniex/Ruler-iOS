@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'SwiftRuler'
-  s.version          = '2.0.2'
+  s.version          = '2.1.0'
   s.summary          = 'Rule Based Validation For Complex Iteration. For Swift (Objective C As Well).'
   s.homepage         = 'https://github.com/phoeniex/SwiftRuler'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
@@ -11,5 +11,4 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '9.0'
   s.swift_version = '5'
   s.source_files = 'src/Main/**/*'
-  s.dependency 'Reachability'
 end
